@@ -1,0 +1,192 @@
+{
+  "format": 1,
+  "release": "components-v1",
+  "builtAt": "2026-10-09T15:11:09.830Z",
+  "assets": [
+    {
+      "name": "whisper-b5454-win-x64.zip",
+      "about": "mesin transkrip whisper.cpp b5454: `whisper-cli`, alat deteksi suara & DLL-nya (jalan di prosesor; semua PC)",
+      "license": "MIT (whisper.cpp & ggml)",
+      "url": "https://github.com/officialgercepai/clippinghunter-files/releases/download/components-v1/whisper-b5454-win-x64.zip",
+      "bytes": 4212961,
+      "sha256": "4141c5301ad1af15e9d60a38b25a13b042de99822581de521b90c817be87a898",
+      "from": {
+        "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-bin-win-cuda-12.4.0-x64.zip",
+        "bytes": 684913404,
+        "sha256": "afef0b881c500958921c3f5523b50e59ee2ec9b6f5cbd25b324c51ed308a957a"
+      },
+      "files": [
+        {
+          "name": "whisper-cli.exe",
+          "bytes": 490496,
+          "sha256": "6535f1d390f28565c70c0be4867088413494cfc4a59b645708354833081c9926"
+        },
+        {
+          "name": "whisper-vad-speech-segments.exe",
+          "bytes": 376320,
+          "sha256": "4c989f008f9cf81f8e2a9682f89db67d54807613735674b6837b5202b39c312b"
+        },
+        {
+          "name": "whisper.dll",
+          "bytes": 1312256,
+          "sha256": "ef910400009cbb62ae3dbd115a080bfb039f8138eac3785bb657effdfc235dc2"
+        },
+        {
+          "name": "ggml.dll",
+          "bytes": 60928,
+          "sha256": "3f1e7f8deb26a37b44280e9b0286e4061b5a582484beb3002e13f8cb7bde219b"
+        },
+        {
+          "name": "ggml-base.dll",
+          "bytes": 677376,
+          "sha256": "c1913240deccc0e3129b10c9fa1abca72a3cd26dc613329b90e936eab95e486e"
+        },
+        {
+          "name": "ggml-cpu-alderlake.dll",
+          "bytes": 1004544,
+          "sha256": "425d2501d54b143e980f2b36a3457d2da6a7a6087e31c4ed012587fc5614a238"
+        },
+        {
+          "name": "ggml-cpu-cannonlake.dll",
+          "bytes": 1047040,
+          "sha256": "883c4cc45121823621ab284d0d5d4749f60aa3961ad30bf5faafaacd07ebd82f"
+        },
+        {
+          "name": "ggml-cpu-cascadelake.dll",
+          "bytes": 1045504,
+          "sha256": "5d7873ecee4195b04be94b3844c5463fbaae794207abd4cd5d16538fa8f72d97"
+        },
+        {
+          "name": "ggml-cpu-haswell.dll",
+          "bytes": 1005568,
+          "sha256": "51fdc42862b5d928e098ffac393b0bfb26a889ac794e5194bf44eb14d503b9c5"
+        },
+        {
+          "name": "ggml-cpu-icelake.dll",
+          "bytes": 1045504,
+          "sha256": "f058b6a05fc5f0db3bbc0f0c699d4d9b1d98e4d7bb4a2b6bdc7cd85171a90b5c"
+        },
+        {
+          "name": "ggml-cpu-sandybridge.dll",
+          "bytes": 1001472,
+          "sha256": "33824adeabfaef0c7daea1e7c1dd754488a52a225a4f2386deb5ba9a419c60ce"
+        },
+        {
+          "name": "ggml-cpu-skylakex.dll",
+          "bytes": 1047040,
+          "sha256": "2f5e7687e5a014b2b6c5a1eaca243be4ca9d77910f5cb956c20343cdf4749903"
+        },
+        {
+          "name": "ggml-cpu-sse42.dll",
+          "bytes": 838656,
+          "sha256": "bffa72877d666493dfbed2e28667c90f06177a537b0d119580bbe55c18e6ea1e"
+        },
+        {
+          "name": "ggml-cpu-x64.dll",
+          "bytes": 839168,
+          "sha256": "9ae1c396a439e2d060dc779199434a47944ec08d5f973b98a4babee43499965e"
+        }
+      ]
+    },
+    {
+      "name": "whisper-b5454-win-x64-cuda12.4.zip",
+      "about": "tambahan GPU buat mesin transkrip (cuma PC dengan kartu grafis NVIDIA): `ggml-cuda.dll` + DLL NVIDIA CUDA 12.4 yang dibutuhin",
+      "license": "MIT (ggml) + NVIDIA CUDA Toolkit EULA (\"Redistributable Software\")",
+      "url": "https://github.com/officialgercepai/clippinghunter-files/releases/download/components-v1/whisper-b5454-win-x64-cuda12.4.zip",
+      "bytes": 652715900,
+      "sha256": "cbd1a789cdc88d4bcc5e149c2bb7a923b7d63ef8db408258fd3385d00e025024",
+      "from": {
+        "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-bin-win-cuda-12.4.0-x64.zip",
+        "bytes": 684913404,
+        "sha256": "afef0b881c500958921c3f5523b50e59ee2ec9b6f5cbd25b324c51ed308a957a"
+      },
+      "files": [
+        {
+          "name": "ggml-cuda.dll",
+          "bytes": 569981440,
+          "sha256": "e728ca1baad3ce9cee8b1e96fdc4d7e033ba558ef219c7e4594b007e32570ccc"
+        },
+        {
+          "name": "cudart64_12.dll",
+          "bytes": 553984,
+          "sha256": "d28e42265da7462162a54da6b7a99ea4fa2caf8139d862bb500db875d0b32dfc"
+        },
+        {
+          "name": "cublas64_12.dll",
+          "bytes": 100033536,
+          "sha256": "e40202fe4223c1cd2d2dce7beec59e1ed61c7801bd827309183be9b50e358f4c"
+        },
+        {
+          "name": "cublasLt64_12.dll",
+          "bytes": 473551360,
+          "sha256": "2a896460bef60ed57ef32b0875812f355a6984e671d638bb632f5e8c1d7a831f"
+        }
+      ]
+    },
+    {
+      "name": "ggml-large-v3-turbo-q5_0.bin",
+      "about": "model transkrip \"Akurat\" (Whisper large-v3-turbo, q5_0)",
+      "license": "MIT (OpenAI Whisper)",
+      "url": "https://github.com/officialgercepai/clippinghunter-files/releases/download/components-v1/ggml-large-v3-turbo-q5_0.bin",
+      "bytes": 574041195,
+      "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2",
+      "from": {
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-large-v3-turbo-q5_0.bin",
+        "bytes": 574041195,
+        "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2"
+      }
+    },
+    {
+      "name": "ggml-small.bin",
+      "about": "model transkrip \"Ringan\" (Whisper small; juga buat caption bahasa Inggris)",
+      "license": "MIT (OpenAI Whisper)",
+      "url": "https://github.com/officialgercepai/clippinghunter-files/releases/download/components-v1/ggml-small.bin",
+      "bytes": 487601967,
+      "sha256": "1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b",
+      "from": {
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-small.bin",
+        "bytes": 487601967,
+        "sha256": "1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b"
+      }
+    },
+    {
+      "name": "ggml-base.bin",
+      "about": "model transkrip \"Paling ringan\" (Whisper base)",
+      "license": "MIT (OpenAI Whisper)",
+      "url": "https://github.com/officialgercepai/clippinghunter-files/releases/download/components-v1/ggml-base.bin",
+      "bytes": 147951465,
+      "sha256": "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe",
+      "from": {
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base.bin",
+        "bytes": 147951465,
+        "sha256": "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe"
+      }
+    },
+    {
+      "name": "ggml-silero-v6.2.0.bin",
+      "about": "deteksi suara (Silero VAD v6.2.0)",
+      "license": "MIT (Silero VAD)",
+      "url": "https://github.com/officialgercepai/clippinghunter-files/releases/download/components-v1/ggml-silero-v6.2.0.bin",
+      "bytes": 885098,
+      "sha256": "2aa269b785eeb53a82983a20501ddf7c1d9c48e33ab63a41391ac6c9f7fb6987",
+      "from": {
+        "url": "https://huggingface.co/ggml-org/whisper-vad/resolve/9ffd54a1e1ee413ddf265af9913beaf518d1639b/ggml-silero-v6.2.0.bin",
+        "bytes": 885098,
+        "sha256": "2aa269b785eeb53a82983a20501ddf7c1d9c48e33ab63a41391ac6c9f7fb6987"
+      }
+    },
+    {
+      "name": "face_detection_yunet_2023mar.onnx",
+      "about": "deteksi wajah (YuNet 2023mar)",
+      "license": "MIT (OpenCV YuNet)",
+      "url": "https://github.com/officialgercepai/clippinghunter-files/releases/download/components-v1/face_detection_yunet_2023mar.onnx",
+      "bytes": 232589,
+      "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+      "from": {
+        "url": "https://huggingface.co/opencv/face_detection_yunet/resolve/3cc26e7f1014a5ee5d74a42acee58bafc9d0a310/face_detection_yunet_2023mar.onnx",
+        "bytes": 232589,
+        "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4"
+      }
+    }
+  ]
+}
