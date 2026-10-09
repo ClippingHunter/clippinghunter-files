@@ -1,0 +1,35 @@
+# Bikin rilis komponen app (components-vN: mesin transkrip & model AI) dari file resmi, dijalanin
+# manual. File resmi dicek SHA-256-nya dulu; isi rilis yang udah jadi gak pernah diubah.
+# Detailnya: scripts/mirror-components.mjs. Gagal = GitHub ngirim email ke pemilik repo.
+name: Bikin rilis komponen
+
+on:
+  workflow_dispatch:
+    inputs:
+      manifest:
+        description: 'Daftar komponen, mis. components/components-v1.json'
+        required: true
+        default: 'components/components-v1.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: components-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Tes script
+        run: node --version && node --test scripts/mirror-components.test.mjs
+
+      - name: Bikin rilis komponen
+        run: node scripts/mirror-components.mjs "$MANIFEST"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MANIFEST: ${{ inputs.manifest }}

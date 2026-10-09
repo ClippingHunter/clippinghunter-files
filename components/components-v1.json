@@ -1,0 +1,111 @@
+{
+  "release": "components-v1",
+  "title": "Komponen app v1 (mesin transkrip & model)",
+  "assets": [
+    {
+      "name": "whisper-b5454-win-x64.zip",
+      "about": "mesin transkrip whisper.cpp b5454: `whisper-cli`, alat deteksi suara & DLL-nya (jalan di prosesor; semua PC)",
+      "license": "MIT (whisper.cpp & ggml)",
+      "from": {
+        "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-bin-win-cuda-12.4.0-x64.zip",
+        "bytes": 684913404,
+        "sha256": "afef0b881c500958921c3f5523b50e59ee2ec9b6f5cbd25b324c51ed308a957a"
+      },
+      "pack": [
+        "whisper-cli.exe",
+        "whisper-vad-speech-segments.exe",
+        "whisper.dll",
+        "ggml.dll",
+        "ggml-base.dll",
+        "ggml-cpu-alderlake.dll",
+        "ggml-cpu-cannonlake.dll",
+        "ggml-cpu-cascadelake.dll",
+        "ggml-cpu-haswell.dll",
+        "ggml-cpu-icelake.dll",
+        "ggml-cpu-sandybridge.dll",
+        "ggml-cpu-skylakex.dll",
+        "ggml-cpu-sse42.dll",
+        "ggml-cpu-x64.dll"
+      ],
+      "extra": [
+        {
+          "name": "LICENSE-whisper.cpp.txt",
+          "url": "https://raw.githubusercontent.com/ggml-org/whisper.cpp/d1be6fde11ac6e0407606b4e42fe72d34add8037/LICENSE",
+          "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+        }
+      ]
+    },
+    {
+      "name": "whisper-b5454-win-x64-cuda12.4.zip",
+      "about": "tambahan GPU buat mesin transkrip (cuma PC dengan kartu grafis NVIDIA): `ggml-cuda.dll` + DLL NVIDIA CUDA 12.4 yang dibutuhin",
+      "license": "MIT (ggml) + NVIDIA CUDA Toolkit EULA (\"Redistributable Software\")",
+      "from": {
+        "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-bin-win-cuda-12.4.0-x64.zip",
+        "bytes": 684913404,
+        "sha256": "afef0b881c500958921c3f5523b50e59ee2ec9b6f5cbd25b324c51ed308a957a"
+      },
+      "pack": ["ggml-cuda.dll", "cudart64_12.dll", "cublas64_12.dll", "cublasLt64_12.dll"],
+      "extra": [
+        {
+          "name": "LICENSE-whisper.cpp.txt",
+          "url": "https://raw.githubusercontent.com/ggml-org/whisper.cpp/d1be6fde11ac6e0407606b4e42fe72d34add8037/LICENSE",
+          "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+        },
+        {
+          "name": "CUDA-NOTICE.txt",
+          "text": "cudart64_12.dll, cublas64_12.dll and cublasLt64_12.dll are NVIDIA CUDA Toolkit 12.4 \"Redistributable Software\",\nCopyright (c) NVIDIA Corporation. They are redistributed unchanged, only as part of the ClippingHunter app\n(used by its speech-to-text engine), under the NVIDIA CUDA Toolkit End User License Agreement:\nhttps://docs.nvidia.com/cuda/eula/\nThey were taken from the official whisper.cpp b5454 release (whisper-bin-win-cuda-12.4.0-x64.zip).\n"
+        }
+      ]
+    },
+    {
+      "name": "ggml-large-v3-turbo-q5_0.bin",
+      "about": "model transkrip \"Akurat\" (Whisper large-v3-turbo, q5_0)",
+      "license": "MIT (OpenAI Whisper)",
+      "from": {
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-large-v3-turbo-q5_0.bin",
+        "bytes": 574041195,
+        "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2"
+      }
+    },
+    {
+      "name": "ggml-small.bin",
+      "about": "model transkrip \"Ringan\" (Whisper small; juga buat caption bahasa Inggris)",
+      "license": "MIT (OpenAI Whisper)",
+      "from": {
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-small.bin",
+        "bytes": 487601967,
+        "sha256": "1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b"
+      }
+    },
+    {
+      "name": "ggml-base.bin",
+      "about": "model transkrip \"Paling ringan\" (Whisper base)",
+      "license": "MIT (OpenAI Whisper)",
+      "from": {
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base.bin",
+        "bytes": 147951465,
+        "sha256": "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe"
+      }
+    },
+    {
+      "name": "ggml-silero-v6.2.0.bin",
+      "about": "deteksi suara (Silero VAD v6.2.0)",
+      "license": "MIT (Silero VAD)",
+      "from": {
+        "url": "https://huggingface.co/ggml-org/whisper-vad/resolve/9ffd54a1e1ee413ddf265af9913beaf518d1639b/ggml-silero-v6.2.0.bin",
+        "bytes": 885098,
+        "sha256": "2aa269b785eeb53a82983a20501ddf7c1d9c48e33ab63a41391ac6c9f7fb6987"
+      }
+    },
+    {
+      "name": "face_detection_yunet_2023mar.onnx",
+      "about": "deteksi wajah (YuNet 2023mar)",
+      "license": "MIT (OpenCV YuNet)",
+      "from": {
+        "url": "https://huggingface.co/opencv/face_detection_yunet/resolve/3cc26e7f1014a5ee5d74a42acee58bafc9d0a310/face_detection_yunet_2023mar.onnx",
+        "bytes": 232589,
+        "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4"
+      }
+    }
+  ]
+}

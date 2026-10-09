@@ -1,13 +1,28 @@
 # ClippingHunter — file download
 
 Repo ini tempat nyimpen file yang didownload app **ClippingHunter**. Kode app-nya gak ada di sini; yang ada
-cuma script kecil buat nyalin yt-dlp otomatis (`scripts/`, `.github/workflows/`).
+cuma script kecil buat nyalin yt-dlp & komponen dari sumber resminya (`scripts/`, `.github/workflows/`).
 
 | Rilis | Isi |
 |---|---|
+| [`components-v1`](https://github.com/officialgercepai/clippinghunter-files/releases/tag/components-v1) | mesin transkrip (whisper.cpp) & model AI yang didownload di layar Setup (lihat di bawah) |
 | [`ytdlp-<versi>`](https://github.com/officialgercepai/clippinghunter-files/releases) | salinan otomatis yt-dlp (lihat di bawah); versi terbarunya di [`ytdlp/latest.json`](ytdlp/latest.json) |
 | [`music-v2`](https://github.com/officialgercepai/clippinghunter-files/releases/tag/music-v2) | pustaka musik latar versi 2 (dipakai app sekarang) |
 | [`music-v1`](https://github.com/officialgercepai/clippinghunter-files/releases/tag/music-v1) | pustaka musik latar versi 1 (app versi lama) |
+
+## Komponen app (rilis `components-v<N>`)
+
+Mesin transkrip & model AI yang didownload app di layar Setup. Daftarnya ada di
+[`components/components-v1.json`](components/components-v1.json) (sumber resmi + SHA-256 yang dipatok); rilisnya
+dibikin GitHub Actions ([`.github/workflows/components.yml`](.github/workflows/components.yml), dijalanin manual):
+file resmi didownload & dicek SHA-256-nya, model AI disalin apa adanya, dan dari zip resmi whisper.cpp cuma
+diambil file yang dipakai app (+ teks lisensinya). Ukuran & SHA-256 semua file, termasuk tiap file di dalam zip,
+dicatat di `components-v1.lock.json` (di rilisnya & di folder [`components/`](components/)). Isi rilis yang udah
+jadi gak pernah diubah: komponen baru = rilis baru.
+
+Lisensi: whisper.cpp & ggml MIT; DLL NVIDIA CUDA 12.4 (cuma di zip `…-cuda12.4.zip`) = "Redistributable Software"
+NVIDIA CUDA Toolkit EULA, dibagiin cuma sebagai bagian dari app ClippingHunter; model Whisper (OpenAI), Silero
+VAD & YuNet MIT.
 
 ## yt-dlp (salinan otomatis, rilis `ytdlp-<versi>`)
 
