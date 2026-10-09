@@ -1,0 +1,37 @@
+# Tiap hari ngecek rilis yt-dlp terbaru. Kalau ada versi baru: tanda tangan & SHA-256-nya dicek,
+# terus disalin ke rilis ytdlp-<versi> di repo ini (bukan "Latest") + dicatat di ytdlp/latest.json.
+# Detailnya: scripts/mirror-ytdlp.mjs. Gagal = GitHub ngirim email ke pemilik repo.
+name: Salin yt-dlp
+
+on:
+  schedule:
+    - cron: '23 2 * * *' # tiap hari 02:23 UTC = 09:23 WIB
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Versi yt-dlp tertentu, mis. 2026.08.19 (kosong = yang terbaru)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ytdlp-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Tes script
+        run: node --version && node --test scripts/mirror-ytdlp.test.mjs
+
+      - name: Salin rilis yt-dlp
+        run: node scripts/mirror-ytdlp.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          INPUT_TAG: ${{ inputs.tag }}
