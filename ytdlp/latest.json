@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "version": "2026.08.19",
+  "publishedAt": "2026-08-19T23:48:43Z",
+  "mirroredAt": "2026-10-09T14:50:54.400Z",
+  "release": "https://github.com/officialgercepai/clippinghunter-files/releases/tag/ytdlp-2026.08.19",
+  "officialRelease": "https://github.com/yt-dlp/yt-dlp/releases/tag/2026.08.19",
+  "signingKey": "AC0CBBE6848D6A873464AF4E57CF65933B5A7581",
+  "exe": {
+    "name": "yt-dlp.exe",
+    "bytes": 17840399,
+    "sha256": "66674953fe251b89f4d08c5f0e35e0728679bd67ab3d7d05c0562af101dd3e7a",
+    "url": "https://github.com/officialgercepai/clippinghunter-files/releases/download/ytdlp-2026.08.19/yt-dlp.exe",
+    "officialUrl": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp.exe"
+  }
+}
