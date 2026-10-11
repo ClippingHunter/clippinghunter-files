@@ -156,7 +156,7 @@ test('latestRecord points at our copy and the official one', () => {
   assert.equal(record.signingKey, SIGNING_KEY)
   assert.equal(
     record.exe.url,
-    'https://github.com/officialgercepai/clippinghunter-files/releases/download/ytdlp-2026.08.19/yt-dlp.exe',
+    'https://github.com/ClippingHunter/clippinghunter-files/releases/download/ytdlp-2026.08.19/yt-dlp.exe',
   )
   assert.equal(record.exe.officialUrl, 'https://github.com/yt-dlp/yt-dlp/releases/download/2026.08.19/yt-dlp.exe')
   assert.equal(record.exe.sha256, 'f'.repeat(64))

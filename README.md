@@ -5,10 +5,12 @@ cuma script kecil buat nyalin yt-dlp & komponen dari sumber resminya (`scripts/`
 
 | Rilis | Isi |
 |---|---|
-| [`components-v1`](https://github.com/officialgercepai/clippinghunter-files/releases/tag/components-v1) | mesin transkrip (whisper.cpp) & model AI yang didownload di layar Setup (lihat di bawah) |
-| [`ytdlp-<versi>`](https://github.com/officialgercepai/clippinghunter-files/releases) | salinan otomatis yt-dlp (lihat di bawah); versi terbarunya di [`ytdlp/latest.json`](ytdlp/latest.json) |
-| [`music-v2`](https://github.com/officialgercepai/clippinghunter-files/releases/tag/music-v2) | pustaka musik latar versi 2 (dipakai app sekarang) |
-| [`music-v1`](https://github.com/officialgercepai/clippinghunter-files/releases/tag/music-v1) | pustaka musik latar versi 1 (app versi lama) |
+| [`app-v<versi>`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/app-v1.0.0) | installer app & update otomatis (tiap rilis ada `release.json` yang ditandatangani). Pembeli download lewat https://lisensi.clippinghunter.id/download |
+| [`ffmpeg-n8.1.3-ch1`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/ffmpeg-n8.1.3-ch1) | FFmpeg yang ikut di installer (LGPL): source persis, script build, binary |
+| [`components-v1`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/components-v1) | mesin transkrip (whisper.cpp) & model AI yang didownload di layar Setup (lihat di bawah) |
+| [`ytdlp-<versi>`](https://github.com/ClippingHunter/clippinghunter-files/releases) | salinan otomatis yt-dlp (lihat di bawah); versi terbarunya di [`ytdlp/latest.json`](ytdlp/latest.json) |
+| [`music-v2`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/music-v2) | pustaka musik latar versi 2 (dipakai app sekarang) |
+| [`music-v1`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/music-v1) | pustaka musik latar versi 1 (app versi lama) |
 
 ## Komponen app (rilis `components-v<N>`)
 
@@ -48,7 +50,7 @@ Script-nya: [`scripts/mirror-ytdlp.mjs`](scripts/mirror-ytdlp.mjs) (bisa dicoba 
 secara keseluruhan berlisensi **GPLv3+**. Tiap rilis `ytdlp-<versi>` bawa `THIRD_PARTY_LICENSES.txt`, source
 yt-dlp, script build + versi pasti tiap library yang dibundel, dan source library copyleft yang dibundel
 (keterangan lengkap di halaman tiap rilis). Source yang kamu butuh gak ketemu? Buka
-[issue](https://github.com/officialgercepai/clippinghunter-files/issues).
+[issue](https://github.com/ClippingHunter/clippinghunter-files/issues).
 
 ## Pustaka musik latar
 
@@ -59,7 +61,7 @@ di bawah sebagai terima kasih. Lisensi tiap lagu dicek di halaman lagunya (v1: 2
 
 ### `music-v2` (dipakai app sekarang)
 
-File-nya ada di rilis [`music-v2`](https://github.com/officialgercepai/clippinghunter-files/releases/tag/music-v2): 43 lagu, 9 mood, dikompres jadi
+File-nya ada di rilis [`music-v2`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/music-v2): 43 lagu, 9 mood, dikompres jadi
 Ogg Opus 96 kbps dari file asli Free Music Archive (selain itu gak diubah). App download tiap lagu pas pertama
 kali dipakai. SHA-256 tiap file keliatan di halaman rilis itu.
 
@@ -112,7 +114,7 @@ kali dipakai. SHA-256 tiap file keliatan di halaman rilis itu.
 ### `music-v1` (app versi lama)
 
 File-nya ada di rilis
-[`music-v1`](https://github.com/officialgercepai/clippinghunter-files/releases/tag/music-v1)
+[`music-v1`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/music-v1)
 (SHA-256 tiap file keliatan di halaman rilis itu). File MP3 disalin apa adanya (gak diubah) dari Free Music Archive.
 
 | Mood | Lagu | Artis | File | Halaman asli |

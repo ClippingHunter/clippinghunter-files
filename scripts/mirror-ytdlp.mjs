@@ -27,7 +27,7 @@ import { pipeline } from 'node:stream/promises'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 export const UPSTREAM = 'yt-dlp/yt-dlp'
-export const OURS = 'officialgercepai/clippinghunter-files'
+export const OURS = 'ClippingHunter/clippinghunter-files'
 export const RELEASE_PREFIX = 'ytdlp-'
 /** Fingerprint of yt-dlp's release signing key; a copy of the key is in ytdlp/yt-dlp-signing-key.asc. */
 export const SIGNING_KEY = 'AC0CBBE6848D6A873464AF4E57CF65933B5A7581'

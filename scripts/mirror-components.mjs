@@ -32,7 +32,7 @@ import { pipeline } from 'node:stream/promises'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import zlib from 'node:zlib'
 
-export const OURS = 'officialgercepai/clippinghunter-files'
+export const OURS = 'ClippingHunter/clippinghunter-files'
 export const LOCK_FORMAT = 1
 /** Every file in our zips gets this date (2026-01-01 00:00), so the same files always give the same zip. */
 const DOS_DATE = ((2026 - 1980) << 9) | (1 << 5) | 1
