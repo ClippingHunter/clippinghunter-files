@@ -9,6 +9,7 @@ cuma script kecil buat nyalin yt-dlp & komponen dari sumber resminya (`scripts/`
 | [`ffmpeg-n8.1.3-ch1`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/ffmpeg-n8.1.3-ch1) | FFmpeg yang ikut di installer (LGPL): source persis, script build, binary |
 | [`components-v1`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/components-v1) | mesin transkrip (whisper.cpp) & model AI yang didownload di layar Setup (lihat di bawah) |
 | [`ytdlp-<versi>`](https://github.com/ClippingHunter/clippinghunter-files/releases) | salinan otomatis yt-dlp (lihat di bawah); versi terbarunya di [`ytdlp/latest.json`](ytdlp/latest.json) |
+| [`music-v3`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/music-v3) | pustaka musik latar versi 3: 43 lagu tambahan (8 mood baru), dipakai app mulai 1.0.3 bareng `music-v2` |
 | [`music-v2`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/music-v2) | pustaka musik latar versi 2 (dipakai app sekarang) |
 | [`music-v1`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/music-v1) | pustaka musik latar versi 1 (app versi lama) |
 
@@ -57,7 +58,59 @@ yt-dlp, script build + versi pasti tiap library yang dibundel, dan source librar
 Semua lagu berlisensi **CC0 1.0 Universal** (public domain,
 https://creativecommons.org/publicdomain/zero/1.0/): boleh dipakai, diubah, dan dibagikan ulang,
 termasuk buat komersial, tanpa izin dan tanpa wajib nyebut pembuatnya. Pembuatnya tetap kami sebut
-di bawah sebagai terima kasih. Lisensi tiap lagu dicek di halaman lagunya (v1: 2026-10-08, v2: 2026-10-09).
+di bawah sebagai terima kasih. Lisensi tiap lagu dicek di halaman lagunya (v1: 2026-10-08, v2: 2026-10-09, v3: 2026-10-14).
+
+### `music-v3` (tambahan, dipakai app mulai 1.0.3)
+
+File-nya ada di rilis [`music-v3`](https://github.com/ClippingHunter/clippinghunter-files/releases/tag/music-v3): 43 lagu tambahan (8 mood baru + 3 lagu Lucu),
+dikompres jadi Ogg Opus 96 kbps dari file asli Free Music Archive (selain itu gak diubah). Tiap lagu juga dicek gak ada
+nyanyian/omongan di dalamnya. App download tiap lagu pas pertama kali dipakai. SHA-256 tiap file keliatan di halaman rilis itu.
+
+| Mood | Lagu | Artis | File | Halaman asli |
+|---|---|---|---|---|
+| Horor | Tension In The Air | HoliznaCC0 | `horor-tension-in-the-air.opus` | [Free Music Archive](https://freemusicarchive.org/music/holiznacc0/beats-from-the-crypt/tension-in-the-air/) |
+| Horor | Someones In The Attic | HoliznaCC0 | `horor-someones-in-the-attic.opus` | [Free Music Archive](https://freemusicarchive.org/music/holiznacc0/beats-from-the-crypt/someones-in-the-attic/) |
+| Horor | Halloween Soundscape | HoliznaCC0 | `horor-halloween-soundscape.opus` | [Free Music Archive](https://freemusicarchive.org/music/holiznacc0/horseless-headman-halloween-beats/halloween-soundscape/) |
+| Horor | Haunted Houses | HoliznaCC0 | `horor-haunted-houses.opus` | [Free Music Archive](https://freemusicarchive.org/music/holiznacc0/horseless-headman-halloween-beats/haunted-houses/) |
+| Horor | The graveyard | Loyalty Freak Music | `horor-the-graveyard.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/WITCHY_BATTY_SPOOKY_HALLOWEEN_IN_SEPTEMBER_/The_graveyard/) |
+| Petualangan | Fouler l'horizon | Komiku | `petualangan-fouler-lhorizon.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Its_time_for_adventure_/Komiku_-_Its_time_for_adventure_-_01_Fouler_lhorizon/) |
+| Petualangan | Pirates libertaires | Komiku | `petualangan-pirates-libertaires.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Its_time_for_adventure_/Komiku_-_Its_time_for_adventure_-_12_Pirates_libertaires/) |
+| Petualangan | L'orage et l'aventure | Komiku | `petualangan-lorage-et-laventure.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Its_time_for_adventure_/Komiku_-_Its_time_for_adventure_-_15_Lorage_et_laventure/) |
+| Petualangan | Pensive Adventure | HoliznaCC0 | `petualangan-pensive-adventure.opus` | [Free Music Archive](https://freemusicarchive.org/music/holiznacc0/retro-gamer-soundtrack/pensive-adventure/) |
+| Petualangan | Introduction to your adventure | Komiku | `petualangan-introduction-to-your-adventure.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/ULTRA_PERSON_VOL1/Komiku_-_ULTRA_PERSON_VOL1_-_01_Introduction_to_your_adventure/) |
+| Nostalgia | Remember the time we use to play | Komiku | `nostalgia-remember-the-time.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Tale_on_the_Late/Komiku_-_Tale_on_the_Late_-_02_Remember_the_time_we_use_to_play/) |
+| Nostalgia | The road we use to travel when we were kids | Komiku | `nostalgia-the-road-we-use-to-travel.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Tale_on_the_Late/Komiku_-_Tale_on_the_Late_-_03_The_road_we_use_to_travel_when_we_were_kids/) |
+| Nostalgia | Childhood scene | Komiku | `nostalgia-childhood-scene.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Its_time_for_adventure__vol_3/Komiku_-_Its_time_for_adventure_vol_3_-_01_Childhood_scene/) |
+| Nostalgia | The place that never get old | Komiku | `nostalgia-the-place-that-never-get-old.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Its_time_for_adventure__vol_3/Komiku_-_Its_time_for_adventure_vol_3_-_07_The_place_that_never_get_old/) |
+| Nostalgia | Life On Cassette | HoliznaCC0 | `nostalgia-life-on-cassette.opus` | [Free Music Archive](https://freemusicarchive.org/music/holiznacc0/be-happy-with-who-you-are/life-on-cassette/) |
+| Serius | Action Investigation | Komiku | `serius-action-investigation.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/The_Binge_Watchers__Score_1/Komiku_-_The_Binge_Watchers_-_Score_1_-_06_Action_Investigation/) |
+| Serius | Ambiant Truth | Komiku | `serius-ambiant-truth.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/The_Binge_Watchers__Score_1/Komiku_-_The_Binge_Watchers_-_Score_1_-_08_Ambiant_Truth/) |
+| Serius | Ambiant Wait | Komiku | `serius-ambiant-wait.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/The_Binge_Watchers__Score_1/Komiku_-_The_Binge_Watchers_-_Score_1_-_16_Ambiant_Wait/) |
+| Serius | Let's be serious a second | Loyalty Freak Music | `serius-lets-be-serious-a-second.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/INSTRUMENTAL_RB_BEATS_TO_SING_OR_RAP_ON/Loyalty_Freak_Music_-_INSTRUMENTAL_RB_BEATS_TO_SING_OR_RAP_ON_-_11_Lets_be_serious_a_second/) |
+| Serius | The Decision | Loyalty Freak Music | `serius-the-decision.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/INSTRUMENTAL_RB_BEATS_TO_SING_OR_RAP_ON/Loyalty_Freak_Music_-_INSTRUMENTAL_RB_BEATS_TO_SING_OR_RAP_ON_-_14_The_Decision/) |
+| Disko | Grab A Partner | Loyalty Freak Music | `disko-grab-a-partner.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/ROLLER_DISCO_DANCE_DANCE/Loyalty_Freak_Music_-_ROLLER_DISCO_DANCE_DANCE_-_05_Grab_A_Partner/) |
+| Disko | Sweat Time ! | Loyalty Freak Music | `disko-sweat-time.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/ROLLER_DISCO_DANCE_DANCE/Loyalty_Freak_Music_-_ROLLER_DISCO_DANCE_DANCE_-_07_Sweat_Time_/) |
+| Disko | Dance Robot ACTIVATE | Loyalty Freak Music | `disko-dance-robot-activate.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/ROLLER_DISCO_DANCE_DANCE/Loyalty_Freak_Music_-_ROLLER_DISCO_DANCE_DANCE_-_02_Dance_Robot_ACTIVATE/) |
+| Disko | We used To Dance | HoliznaCC0 | `disko-we-used-to-dance.opus` | [Free Music Archive](https://freemusicarchive.org/music/holiznacc0/waves-of-nostalgia-2/we-used-to-dance/) |
+| Disko | Disco Challenge | Komiku | `disko-disco-challenge.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Helice_Awesome_Dance_Adventure_/disco-challenge/) |
+| Ending bahagia | Victory | Komiku | `ending-victory.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Its_time_for_adventure__vol_2/Komiku_-_Its_time_for_adventure_vol_2_-_15_Victory/) |
+| Ending bahagia | Credits, thank you for playing | Komiku | `ending-credits-thank-you.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Its_time_for_adventure__vol_5/Komiku_-_Its_time_for_adventure_vol_5_-_13_Credits_thank_you_for_playing/) |
+| Ending bahagia | Together we are stronger | Komiku | `ending-together-we-are-stronger.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_59_Together_we_are_stronger/) |
+| Ending bahagia | Sweet Sun | Loyalty Freak Music | `ending-sweet-sun.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/POSITIVE_ATTITUDE_/Loyalty_Freak_Music_-_POSITIVE_ATTITUDE__-_04_Sweet_Sun/) |
+| Ending bahagia | Sunset on the beach | Komiku | `ending-sunset-on-the-beach.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_55_Sunset_on_the_beach/) |
+| Ngendap-ngendap | Gang of alley cats | Komiku | `ngendap-gang-of-alley-cats.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_17_Gang_of_alley_cats/) |
+| Ngendap-ngendap | Tenacious, incompetent, honorous, scientist, bouffon (evil side kick theme) | Komiku | `ngendap-evil-side-kick-theme.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Its_time_for_adventure__vol_5/Komiku_-_Its_time_for_adventure_vol_5_-_02_Tenacious_incompetent_honorous_scientist_bouffon_evil_side_kick_theme/) |
+| Ngendap-ngendap | Monster Parade | Loyalty Freak Music | `ngendap-monster-parade.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/WITCHY_BATTY_SPOOKY_HALLOWEEN_IN_SEPTEMBER_/Monster_Parade/) |
+| Ngendap-ngendap | The Old Witch Place | Loyalty Freak Music | `ngendap-the-old-witch-place.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/WITCHY_BATTY_SPOOKY_HALLOWEEN_IN_SEPTEMBER_/The_Old_Witch_Place/) |
+| Ngendap-ngendap | Intensive puzzle resolution | Komiku | `ngendap-intensive-puzzle-resolution.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_36_Intensive_puzzle_resolution/) |
+| Jedag-jedug | After Party | Loyalty Freak Music | `jedag-after-party.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/ROBOT_DANCE_/Loyalty_Freak_Music_-_ROBOT_DANCE__-_03_After_Party/) |
+| Jedag-jedug | Everyone is so alive | Loyalty Freak Music | `jedag-everyone-is-so-alive.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/ROBOT_DANCE_/Loyalty_Freak_Music_-_ROBOT_DANCE__-_01_Everyone_is_so_alive/) |
+| Jedag-jedug | Action Techno | Komiku | `jedag-action-techno.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/The_Binge_Watchers__Score_1/Komiku_-_The_Binge_Watchers_-_Score_1_-_20_Action_Techno/) |
+| Lucu | Mall | Komiku | `lucu-mall.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Captain_Glouglous_Incredible_Week_Soundtrack/mall_1328/) |
+| Lucu | School | Komiku | `lucu-school.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Captain_Glouglous_Incredible_Week_Soundtrack/school/) |
+| Lucu | Poupi on a scooter | Komiku | `lucu-poupi-on-a-scooter.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Poupis_incredible_adventures_/Komiku_-_Poupis_incredible_adventures__-_21_Poupi_on_a_scooter/) |
+| Jedag-jedug | It feels good to be alive too | Loyalty Freak Music | `jedag-it-feels-good-to-be-alive.opus` | [Free Music Archive](https://freemusicarchive.org/music/Loyalty_Freak_Music/ROBOT_DANCE_/Loyalty_Freak_Music_-_ROBOT_DANCE__-_04_It_feels_good_to_be_alive_too/) |
+| Jedag-jedug | Dance with two or more | Komiku | `jedag-dance-with-two-or-more.opus` | [Free Music Archive](https://freemusicarchive.org/music/Komiku/Helice_Awesome_Dance_Adventure_/dance-with-two-or-more/) |
 
 ### `music-v2` (dipakai app sekarang)
 
