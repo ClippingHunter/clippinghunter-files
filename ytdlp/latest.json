@@ -1,16 +1,16 @@
 {
   "format": 1,
-  "version": "2026.10.21",
-  "publishedAt": "2026-10-21T21:54:37Z",
-  "mirroredAt": "2026-10-22T07:39:58.702Z",
-  "release": "https://github.com/ClippingHunter/clippinghunter-files/releases/tag/ytdlp-2026.10.21",
-  "officialRelease": "https://github.com/yt-dlp/yt-dlp/releases/tag/2026.10.21",
+  "version": "2026.10.26",
+  "publishedAt": "2026-10-26T22:25:26Z",
+  "mirroredAt": "2026-10-27T07:57:09.574Z",
+  "release": "https://github.com/ClippingHunter/clippinghunter-files/releases/tag/ytdlp-2026.10.26",
+  "officialRelease": "https://github.com/yt-dlp/yt-dlp/releases/tag/2026.10.26",
   "signingKey": "AC0CBBE6848D6A873464AF4E57CF65933B5A7581",
   "exe": {
     "name": "yt-dlp.exe",
-    "bytes": 17880111,
-    "sha256": "33121d192d706e62f684a06f80918e3f3a8ba52ac3a65213b6951c39c7d9f555",
-    "url": "https://github.com/ClippingHunter/clippinghunter-files/releases/download/ytdlp-2026.10.21/yt-dlp.exe",
-    "officialUrl": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.10.21/yt-dlp.exe"
+    "bytes": 23575744,
+    "sha256": "f5389d3698ecde4ef06f4e6b1ce0294fe9ac1396228c8990b8d3416d6d177a7d",
+    "url": "https://github.com/ClippingHunter/clippinghunter-files/releases/download/ytdlp-2026.10.26/yt-dlp.exe",
+    "officialUrl": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.10.26/yt-dlp.exe"
   }
 }
